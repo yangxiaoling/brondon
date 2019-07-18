@@ -1,4 +1,4 @@
-import subprocess
+import subprocess, os
 
 
 def collect():
@@ -7,8 +7,7 @@ def collect():
 
     for key in filter_keys:
         try:
-            cmd_res = subprocess.run('sudo dmidecode -t system | grep %s' % key, shell=True)  # 在Linux系统下获取有关硬件方面的信息, Desktop Management Interface,DMI
-            print(cmd_res)
+            cmd_res = subprocess.Popen('sudo dmidecode -t system | grep %s' % key, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read().decode()  # 在Linux系统下获取有关硬件方面的信息, Desktop Management Interface,DMI
             res_to_list = cmd_res.split(':')  # the second one is wanted string
             if len(res_to_list) > 1:
                 raw_data[key] = res_to_list[1].strip()
@@ -38,14 +37,14 @@ def cpuinfo():
     base_cmd = 'cat /proc/cpuinfo'
 
     raw_data = {
-        'cpu_model': "%s |grep 'model name' |head -1 " % base_cmd,
+        'cpu_model': "%s |grep 'model name' |head -1 " % base_cmd,  # 多核会输出多行
         'cpu_count': "%s |grep 'processor' |wc -l " % base_cmd,
         'cpu_core_count': "%s |grep 'cpu cores' |awk -F: '{SUM +=$2} END {print SUM}'" % base_cmd,
     }
 
     for k, cmd in raw_data.items():
         try:
-            cmd_res = subprocess.run(cmd, shell=True)
+            cmd_res = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read().decode()
             raw_data[k] = cmd_res
 
         except ValueError as e:
@@ -65,8 +64,8 @@ def cpuinfo():
 
 
 def osinfo():
-    distributor = subprocess.run("lsb_release -a |grep 'Distributor ID'").split(':')
-    release = subprocess.run("lsb_release -a |grep Description").split(':')
+    distributor = subprocess.Popen("lsb_release -a |grep 'Distributor ID'", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read().decode().split(':')
+    release = subprocess.Popen("lsb_release -a |grep Description", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read().decode().split(':')
     data_dic = {
         "os_distribution": distributor[1].strip() if len(distributor) > 1 else None,
         "os_release": release[1].strip() if len(release) > 1 else None,
@@ -143,3 +142,25 @@ def nicinfo():
     last_mac_addr = None
     for line in raw_data:
         if next_ip_line:
+            pass
+
+
+def diskinfo():
+    obj = DiskPlugin()
+    return obj.linux()
+
+
+class DiskPlugin:
+    def linux(self):
+        result = {'physical_disk_driver': []}
+        try:
+            script_path = os.path.dirname(os.path.abspath(__file__))
+            shell_command = "sudo %s/MegaCli -PDList -aAll" % script_path
+            output = subprocess.Popen(shell_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read().decode()
+            result['physical_disk_driver'] = self.parse(output[1])
+        except Exception as e:
+            result['error'] = e
+            return result
+
+    def parse(self, content):
+        pass

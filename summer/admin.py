@@ -117,13 +117,13 @@ class DiskInline(admin.TabularInline):
 class AssetAdmin(admin.ModelAdmin):
     list_display = ('id', 'asset_type', 'sn', 'name', 'manufactory', 'management_ip', 'idc', 'business_unit', 'admin', 'trade_date', 'status')
     inlines = [ServerInline, CPUInline, RAMInline, DiskInline, NICInline]
-    search_fields = ['sn',]
-    list_filter = ['idc', 'manufactory', 'business_unit', 'asset_type']
-    choice_fields = ('asset_type', 'status')
-    fk_fields = ('manufactory', 'idc', 'business_unit', 'admin')
+    search_fields = ['sn']
+    # list_filter = ['idc', 'manufactory', 'business_unit', 'asset_type']
+    choice_fields = ('asset_type', 'status')  # ??
+    fk_fields = ('manufactory', 'idc', 'business_unit', 'admin')  # ??
     list_per_page = 10
     list_filter = ('asset_type', 'status', 'manufactory', 'idc', 'business_unit', 'admin', 'trade_date')
-    dynamic_fk = 'asset_type'
+    dynamic_fk = 'asset_type'  # ??
     dynamic_list_display = ('model', 'sub_asset_type', 'os_type', 'os_distribution')
     dynamic_choice_fields = ('sub_asset_type',)
     m2m_fields = ('tags',)
@@ -145,12 +145,12 @@ from django.http import HttpResponseRedirect
 
 
 class NewAssetApprovalZoneAdmin(admin.ModelAdmin):
-    list_display = ('sn','asset_type','manufactory','model','cpu_model','cpu_count','cpu_core_count','ram_size','os_distribution','os_release','date','approved','approved_by','approved_date')
+    list_display = ('sn', 'asset_type', 'manufactory', 'model', 'cpu_model', 'cpu_count', 'cpu_core_count', 'ram_size', 'os_distribution', 'os_release', 'date', 'approved', 'approved_by', 'approved_date')
     actions = ['approve_selected_objects']
 
     def approve_selected_objects(modeladmin, request, queryset):
-        selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
-        ct = ContentType.objects.get_for_model(queryset.model)
+        selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)  # 选中的数据
+        ct = ContentType.objects.get_for_model(queryset.model)  # ContentType: app到model的对应关系, ct.pk为表的id
         return HttpResponseRedirect("/asset/new_assets/approval/?ct=%s&ids=%s" % (ct.pk, ",".join(selected)))
     approve_selected_objects.short_description = "批准入库"
 

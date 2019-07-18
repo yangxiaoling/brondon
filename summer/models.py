@@ -141,7 +141,7 @@ class Asset(models.Model):
     sn = models.CharField('资产SN号', max_length=128, unique=True)
     manufactory = models.ForeignKey('Manufactory', verbose_name='制造商', null=True, blank=True, on_delete=models.CASCADE)  # 为啥可以为空??
     # model = models.ForeignKey('ProductModel', verbose_name='型号')
-    # model = models.CharField('型号',max_length=128,null=True, blank=True )
+    model = models.CharField('型号', max_length=128, null=True, blank=True)
 
     management_ip = models.GenericIPAddressField('管理IP', blank=True, null=True)
 
@@ -193,7 +193,7 @@ class Server(models.Model):
     # sn = models.CharField('SN号',max_length=128)
     # management_ip = models.CharField('管理IP',max_length=64,blank=True,null=True)
     # manufactory = models.ForeignKey(verbose_name='制造商',max_length=128,null=True, blank=True)
-    model = models.CharField(verbose_name='型号', max_length=128, null=True, blank=True )
+    # model = models.CharField(verbose_name='型号', max_length=128, null=True, blank=True )
     # 若有多个CPU，型号应该都是一致的，故没做ForeignKey
 
     # nic = models.ManyToManyField('NIC', verbose_name='网卡列表')
@@ -292,7 +292,7 @@ class CPU(models.Model):
     cpu_model = models.CharField('CPU型号', max_length=128, blank=True)
     cpu_count = models.SmallIntegerField('物理cpu个数')
     cpu_core_count = models.SmallIntegerField('cpu核数')
-    memo = models.TextField('备注', null=True,blank=True)
+    memo = models.TextField('备注', null=True, blank=True)
     create_date = models.DateTimeField(auto_now_add=True)
     update_date = models.DateTimeField(blank=True, null=True)
 
@@ -306,7 +306,7 @@ class CPU(models.Model):
 
 class RAM(models.Model):
     asset = models.ForeignKey('Asset', on_delete=models.CASCADE)
-    sn = models.CharField('SN号', max_length=128, blank=True, null=True)  # 重复了啊??
+    sn = models.CharField('SN号', max_length=128, blank=True, null=True)
     model = models.CharField('内存型号', max_length=128)
     slot = models.CharField('插槽', max_length=64)
     capacity = models.IntegerField('内存大小(MB)')
@@ -328,7 +328,7 @@ class Disk(models.Model):
     asset = models.ForeignKey('Asset', on_delete=models.CASCADE)
     sn = models.CharField('SN号', max_length=128, blank=True, null=True)
     slot = models.CharField('插槽位', max_length=64)
-    # manufactory = models.CharField('制造商', max_length=64,blank=True,null=True)
+    manufactory = models.CharField('制造商', max_length=64,blank=True,null=True)
     model = models.CharField('磁盘型号', max_length=128, blank=True, null=True)
     capacity = models.FloatField('磁盘容量GB')
     disk_iface_choice = (
@@ -357,8 +357,9 @@ class NIC(models.Model):
     asset = models.ForeignKey('Asset', on_delete=models.CASCADE)  # 关联Assert表, 是因为server和newwork都有网卡, Foreignkey无法直接关联多张表
     name = models.CharField('网卡名', max_length=64, blank=True, null=True)
     sn = models.CharField('SN号', max_length=128, blank=True, null=True)
-    model = models.CharField('网卡型号', max_length=128, blank=True,null=True)
-    macaddress = models.CharField('MAC', max_length=64, unique=True)
+    model = models.CharField('网卡型号', max_length=128, blank=True, null=True)
+    # macaddress = models.CharField('MAC', max_length=64, unique=True)
+    macaddress = models.CharField('MAC', max_length=64)   # 暂时
     ipaddress = models.GenericIPAddressField('IP', blank=True, null=True)
     netmask = models.CharField(max_length=64, blank=True, null=True)
     bonding = models.CharField(max_length=64, blank=True, null=True)  # 网卡绑定(例如, 两个1M网卡可绑定为一个2M网卡)
@@ -373,7 +374,7 @@ class NIC(models.Model):
         verbose_name = '网卡'
         verbose_name_plural = "网卡"
         # unique_together = ("asset_id", "slot")
-        unique_together = ("asset", "macaddress")
+        unique_together = ("asset", "macaddress", "name")  # 因为存在虚拟网卡, 所以加了个name
     auto_create_fields = ['name', 'sn', 'model', 'macaddress', 'ipaddress', 'netmask', 'bonding']
 
 

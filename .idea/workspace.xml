@@ -1,22 +1,516 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74b3cc9e-1b79-4425-8b8a-33f04d2af4d5" name="Default Changelist" comment="" />
+    <list default="true" id="74b3cc9e-1b79-4425-8b8a-33f04d2af4d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3fcbf49d-574a-460d-a68d-da9ddc50a629.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Meera/conf/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Meera/conf/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Meera/core/api_token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Meera/logs/run_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Meera/var/.asset_id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/nifty.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/pace.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-coffee.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-dark.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-dust.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-lime.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-mint.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-navy.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-ocean.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-prickly-pear.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-purple.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-well-red.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-a/theme-yellow.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-coffee.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-dark.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-dust.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-lime.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-mint.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-navy.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-ocean.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-prickly-pear.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-purple.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-well-red.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-b/theme-yellow.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-coffee.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-dark.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-dust.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-light.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-lime.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-mint.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-navy.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-ocean.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-prickly-pear.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-purple.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-well-red.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/css/themes/type-c/theme-yellow.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/av1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/av2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/av4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/balloon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/collapsed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/error.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/expanded.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/flags/france.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/flags/germany.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/flags/italy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/flags/spain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/flags/united-kingdom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/flags/united-kingdom.png.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/offcanvas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/revealing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/img/slidein.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/js/fastclick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/js/jquery-2.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/js/nifty.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/js/pace.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/css/autoFill.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/css/autoFill.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/css/autoFill.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/css/autoFill.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/css/autoFill.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/css/autoFill.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/css/autoFill.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/css/autoFill.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/js/autoFill.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/js/autoFill.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/js/autoFill.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/js/autoFill.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/js/autoFill.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/js/autoFill.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/js/dataTables.autoFill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/AutoFill-2.0.0/js/dataTables.autoFill.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/buttons.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/buttons.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/buttons.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/buttons.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/buttons.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/buttons.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/buttons.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/buttons.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/css/mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.colVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.colVis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.flash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.flash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.html5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.html5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.print.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/buttons.print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/dataTables.buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/js/dataTables.buttons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Buttons-1.0.3/swf/flashExport.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/css/colReorder.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/css/colReorder.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/css/colReorder.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/css/colReorder.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/css/colReorder.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/css/colReorder.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/css/colReorder.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/css/colReorder.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/js/dataTables.colReorder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/ColReorder-1.2.0/js/dataTables.colReorder.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/css/jquery.dataTables_themeroller.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/DataTables-1.10.9/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/css/fixedColumns.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/css/fixedColumns.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/css/fixedColumns.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/css/fixedColumns.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/css/fixedColumns.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/css/fixedColumns.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/css/fixedColumns.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/css/fixedColumns.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/js/dataTables.fixedColumns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedColumns-3.1.0/js/dataTables.fixedColumns.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/css/fixedHeader.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/css/fixedHeader.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/css/fixedHeader.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/css/fixedHeader.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/css/fixedHeader.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/css/fixedHeader.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/css/fixedHeader.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/css/fixedHeader.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/js/dataTables.fixedHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/FixedHeader-3.0.0/js/dataTables.fixedHeader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/css/keyTable.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/css/keyTable.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/css/keyTable.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/css/keyTable.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/css/keyTable.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/css/keyTable.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/css/keyTable.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/css/keyTable.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/js/dataTables.keyTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/KeyTable-2.0.0/js/dataTables.keyTable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/css/responsive.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/css/responsive.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/css/responsive.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/css/responsive.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/css/responsive.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/css/responsive.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/css/responsive.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/css/responsive.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/js/dataTables.responsive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Responsive-1.0.7/js/dataTables.responsive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/css/rowReorder.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/css/rowReorder.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/css/rowReorder.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/css/rowReorder.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/css/rowReorder.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/css/rowReorder.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/css/rowReorder.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/css/rowReorder.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/js/dataTables.rowReorder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/RowReorder-1.0.0/js/dataTables.rowReorder.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/css/scroller.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/css/scroller.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/css/scroller.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/css/scroller.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/css/scroller.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/css/scroller.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/css/scroller.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/css/scroller.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/js/dataTables.scroller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Scroller-1.3.0/js/dataTables.scroller.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/css/select.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/css/select.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/css/select.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/css/select.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/css/select.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/css/select.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/css/select.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/css/select.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/js/dataTables.select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/Select-1.0.1/js/dataTables.select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/datatables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/datatables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/datatables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/datatables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/jQuery-2.1.4/jquery-2.1.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/jQuery-2.1.4/jquery-2.1.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/pdfmake-0.1.18/build/pdfmake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/pdfmake-0.1.18/build/pdfmake.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/DataTables/pdfmake-0.1.18/build/vfs_fonts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/css/bootstrap-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/css/bootstrap-select.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/css/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/bootstrap-select.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/bootstrap-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-bg_BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-bg_BG.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-cs_CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-cs_CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-da_DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-da_DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-de_DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-de_DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-en_US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-en_US.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-es_CL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-eu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-fa_IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-fa_IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-fr_FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-fr_FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-hu_HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-hu_HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-it_IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-it_IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-ko_KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-ko_KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-nl_NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-nl_NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-pl_PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-pl_PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-pt_BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-pt_PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-ro_RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-ro_RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-ru_RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-ru_RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-sk_SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-sk_SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-sl_SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-sl_SI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-sv_SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-tr_TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-tr_TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-ua_UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-ua_UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-zh_CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/dist/js/i18n/defaults-zh_TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-bg_BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-cs_CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-da_DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-de_DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-en_US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-fa_IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-fr_FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-hu_HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-it_IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-ko_KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-nl_NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-pl_PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-ro_RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-ru_RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-sk_SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-sl_SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-tr_TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-ua_UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/js/i18n/defaults-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/less/bootstrap-select.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-select/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/.bowerrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/dist/bootstrap-treeview.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/dist/bootstrap-treeview.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/public/css/bootstrap-treeview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/public/example-dom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/public/js/bootstrap-treeview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/screenshot/default.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/src/css/bootstrap-treeview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/src/js/bootstrap-treeview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/tests/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/tests/lib/blanket.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/tests/lib/bootstrap-treeview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/tests/lib/bootstrap-treeview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/tests/lib/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/tests/lib/qunit-1.12.0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/tests/lib/qunit-1.12.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/tests/tests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-treeview/tests/tests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-validator/bootstrapValidator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-validator/bootstrapValidator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-validator/bootstrapValidator.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/bootstrap-validator/bootstrapValidator.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/echart/echarts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statics/plugins/echart/infographic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/summer/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/summer/migrations/0002_auto_20190717_1258.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/summer/migrations/0003_auto_20190717_1503.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/summer/migrations/0004_auto_20190717_1509.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/summer/migrations/0005_auto_20190718_1123.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/summer/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assets/new_assets_approval.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meera/core/HouseStark.py" beforeDir="false" afterPath="$PROJECT_DIR$/Meera/core/HouseStark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meera/core/info_collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Meera/core/info_collection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meera/plugins/linux/sysinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Meera/plugins/linux/sysinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Meera/plugins/windows/sysinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Meera/plugins/windows/sysinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brondon/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/brondon/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brondon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/brondon/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/summer/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/summer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/summer/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summer/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            <state relative-caret-position="-520">
+              <caret line="331" column="20" selection-start-line="331" selection-start-column="20" selection-end-line="331" selection-end-column="20" />
               <folding>
                 <element signature="e#45#73#0" expanded="true" />
+                <element signature="e#265#1302#0" />
+                <element signature="e#1403#3705#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#1251#1486#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer/core.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="161" column="28" selection-start-line="161" selection-start-column="28" selection-end-line="161" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#5729#5955#0" />
+                <element signature="e#6969#7502#0" />
+                <element signature="e#7577#8349#0" />
+                <element signature="e#8416#9489#0" />
+                <element signature="e#9538#10872#0" />
+                <element signature="e#10920#12163#0" />
+                <element signature="e#12211#13252#0" />
+                <element signature="e#14613#16345#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+              <folding>
+                <element signature="e#631#663#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/summer/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="153" column="63" selection-start-line="153" selection-start-column="55" selection-end-line="153" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#272#1249#0" />
+                <element signature="e#1295#2118#0" />
+                <element signature="e#2160#3265#0" />
               </folding>
             </state>
           </provider>
@@ -25,8 +519,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meera/core/HouseStark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="-114">
+              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#2584#3197#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,39 +532,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Meera/core/info_collection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Meera/plugins/plugin_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Meera/plugins/windows/sysinfo.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Meera/plugins/linux/sysinfo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
-              <folding>
-                <element signature="e#1011#1795#0" />
-                <element signature="e#1936#2320#0" />
-                <element signature="e#2342#4110#0" />
-              </folding>
+            <state relative-caret-position="25">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -77,48 +544,76 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>u&quot;</find>
+      <find>urlencode</find>
+      <find>ContentType</find>
+      <find>asset_list</find>
+      <find>new asset, going to create</find>
+      <find>__update_asset_id</find>
+      <find>??</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/summer/models.py" />
-        <option value="$PROJECT_DIR$/brondon/settings.py" />
-        <option value="$PROJECT_DIR$/summer/admin.py" />
         <option value="$PROJECT_DIR$/Meera/bin/NedStark.py" />
-        <option value="$PROJECT_DIR$/Meera/core/HouseStark.py" />
-        <option value="$PROJECT_DIR$/Meera/core/info_collection.py" />
         <option value="$PROJECT_DIR$/Meera/plugins/windows/plugin_api.py" />
         <option value="$PROJECT_DIR$/Meera/plugins/plugin_api.py" />
+        <option value="$PROJECT_DIR$/Meera/plugins/windows/sysinfo.py" />
+        <option value="$PROJECT_DIR$/Meera/core/info_collection.py" />
         <option value="$PROJECT_DIR$/Meera/plugins/linux/sysinfo.py" />
+        <option value="$PROJECT_DIR$/Meera/conf/settings.py" />
+        <option value="$PROJECT_DIR$/brondon/urls.py" />
+        <option value="$PROJECT_DIR$/Meera/core/api_token.py" />
+        <option value="$PROJECT_DIR$/brondon/settings.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/assets/new_assets_approval.html" />
+        <option value="$PROJECT_DIR$/summer/admin.py" />
+        <option value="$PROJECT_DIR$/summer/urls.py" />
+        <option value="$PROJECT_DIR$/Meera/var/.asset_id" />
+        <option value="$PROJECT_DIR$/Meera/core/HouseStark.py" />
+        <option value="$PROJECT_DIR$/summer/views.py" />
+        <option value="$PROJECT_DIR$/summer/models.py" />
+        <option value="$PROJECT_DIR$/summer/core.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="910" />
-    <option name="y" value="71" />
-    <option name="width" value="1018" />
-    <option name="height" value="959" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-17" />
+    <option name="y" value="1" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brondon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brondon" type="462c0819:PsiDirectoryNode" />
               <item name="brondon" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -136,45 +631,63 @@
               <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
               <item name="brondon" type="462c0819:PsiDirectoryNode" />
               <item name="Meera" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brondon" type="462c0819:PsiDirectoryNode" />
+              <item name="Meera" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
               <item name="brondon" type="462c0819:PsiDirectoryNode" />
               <item name="Meera" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
               <item name="brondon" type="462c0819:PsiDirectoryNode" />
               <item name="Meera" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="linux" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="brondon" type="462c0819:PsiDirectoryNode" />
-              <item name="Meera" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="windows" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
               <item name="brondon" type="462c0819:PsiDirectoryNode" />
               <item name="summer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brondon" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brondon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brondon" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/值得一看/dj/python 全栈开发-项目实战篇-day89/NBcmdb" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\files\dja\brondon" />
+      <recent name="D:\files\dja\brondon\summer" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -188,7 +701,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.NedStark">
+  <component name="RunManager" selected="Django server.brondon">
     <configuration name="NedStark" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="brondon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,49 +765,59 @@
       <option name="presentableId" value="Default" />
       <updated>1563090156496</updated>
       <workItem from="1563090217852" duration="25483000" />
+      <workItem from="1563240860700" duration="37419000" />
+      <workItem from="1563329461806" duration="31396000" />
+      <workItem from="1563414479675" duration="11403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25483000" />
+    <option name="totallyTimeSpent" value="119389000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="728" y="57" width="814" height="767" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19087137" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.45037037" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3894102" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info id="Structure" order="2" weight="0.28176796" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27124184" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.079178885" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32928678" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.38856304" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.30267063" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.15951742" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/brondon$NedStark.coverage" NAME="NedStark Coverage Results" MODIFIED="1563168333224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Meera/bin" />
+    <SUITE FILE_PATH="coverage/brondon$NedStark.coverage" NAME="NedStark Coverage Results" MODIFIED="1563198710694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Meera/bin" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/brondon/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/db/models/fields/related.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -309,83 +832,264 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/db/models/base.py">
+    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/site-packages/wmi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="665" column="6" lean-forward="true" selection-start-line="665" selection-start-column="6" selection-end-line="665" selection-end-column="6" />
+        <state relative-caret-position="-983">
+          <caret line="1197" column="4" selection-start-line="1197" selection-start-column="4" selection-end-line="1197" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/brondon/settings.py">
+    <entry file="file://$PROJECT_DIR$/Meera/plugins/windows/sysinfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
-          <folding>
-            <element signature="e#22#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-          <folding>
-            <element signature="e#45#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meera/bin/NedStark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meera/core/HouseStark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meera/core/info_collection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="-2032">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Meera/plugins/windows/sysinfo.py">
+    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/urllib/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Meera/plugins/plugin_api.py">
+    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="66">
+          <caret line="306" column="45" lean-forward="true" selection-start-line="306" selection-start-column="45" selection-end-line="306" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#2720#1" />
+            <element signature="e#2722#2735#0" />
+            <element signature="e#4056#4801#0" />
+            <element signature="e#5042#8690#0" />
+            <element signature="e#8850#10866#0" />
+            <element signature="e#10890#11153#0" />
+            <element signature="e#11259#11617#0" />
+            <element signature="e#15094#19745#0" />
+            <element signature="e#19950#21150#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meera/core/api_token.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="829" column="4" selection-start-line="829" selection-start-column="4" selection-end-line="829" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/http/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="471" column="6" selection-start-line="471" selection-start-column="6" selection-end-line="471" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="398" column="6" selection-start-line="398" selection-start-column="6" selection-end-line="398" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/contrib/contenttypes/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3fcbf49d-574a-460d-a68d-da9ddc50a629/schema/main/table/django_content_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="da13341b-c864-432d-a5cb-a01d00e8acce">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/js/pace.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brondon/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#block#2;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Meera/plugins/linux/sysinfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+        <state relative-caret-position="2604">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meera/plugins/plugin_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/contrib/admin/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Users/yangxl/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20500">
+          <caret line="851" column="8" selection-start-line="851" selection-start-column="8" selection-end-line="851" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meera/bin/NedStark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meera/conf/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meera/core/info_collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="153" column="63" selection-start-line="153" selection-start-column="55" selection-end-line="153" selection-end-column="63" />
           <folding>
-            <element signature="e#1011#1795#0" />
-            <element signature="e#1936#2320#0" />
-            <element signature="e#2342#4110#0" />
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#272#1249#0" />
+            <element signature="e#1295#2118#0" />
+            <element signature="e#2160#3265#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brondon/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/assets/new_assets_approval.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="42" column="53" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="53" />
+          <folding>
+            <element signature="e#434#2019#0#HTML" />
+            <element signature="e#2450#3807#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520">
+          <caret line="331" column="20" selection-start-line="331" selection-start-column="20" selection-end-line="331" selection-end-column="20" />
+          <folding>
+            <element signature="e#45#73#0" expanded="true" />
+            <element signature="e#265#1302#0" />
+            <element signature="e#1403#3705#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meera/var/.asset_id">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meera/logs/run_log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meera/core/HouseStark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#2584#3197#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#1251#1486#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/summer/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="161" column="28" selection-start-line="161" selection-start-column="28" selection-end-line="161" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#5729#5955#0" />
+            <element signature="e#6969#7502#0" />
+            <element signature="e#7577#8349#0" />
+            <element signature="e#8416#9489#0" />
+            <element signature="e#9538#10872#0" />
+            <element signature="e#10920#12163#0" />
+            <element signature="e#12211#13252#0" />
+            <element signature="e#14613#16345#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
