@@ -7,7 +7,7 @@ def collect():
 
     for key in filter_keys:
         try:
-            cmd_res = subprocess.Popen('sudo dmidecode -t system | grep %s' % key, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read().decode()  # 在Linux系统下获取有关硬件方面的信息, Desktop Management Interface,DMI
+            cmd_res = subprocess.Popen('sudo dmidecode -t system | grep "%s"' % key, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read().decode()  # 在Linux系统下获取有关硬件方面的信息, Desktop Management Interface,DMI
             res_to_list = cmd_res.split(':')  # the second one is wanted string
             if len(res_to_list) > 1:
                 raw_data[key] = res_to_list[1].strip()
@@ -28,8 +28,8 @@ def collect():
     data.update(cpuinfo())
     data.update(osinfo())
     data.update(raminfo())
-    data.update(nicinfo())
-    data.update(diskinfo())
+    # data.update(nicinfo())
+    # data.update(diskinfo())
     return data
 
 
@@ -155,7 +155,7 @@ class DiskPlugin:
         result = {'physical_disk_driver': []}
         try:
             script_path = os.path.dirname(os.path.abspath(__file__))
-            shell_command = "sudo %s/MegaCli -PDList -aAll" % script_path
+            shell_command = "sudo %s/MegaCli -PDList -aAll" % script_path  # 只能在戴尔服务器上执行， 查看做磁盘阵列之前的真实信息
             output = subprocess.Popen(shell_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read().decode()
             result['physical_disk_driver'] = self.parse(output[1])
         except Exception as e:

@@ -3,6 +3,7 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 from summer import core
 from summer import models
+from summer import utils
 # Create your views here.
 
 
@@ -37,6 +38,7 @@ def new_assets_approval(request):
         return render(request, 'assets/new_assets_approval.html', {'new_assets': new_assets})
 
 @csrf_exempt
+@utils.token_required
 def asset_report(request):
     if request.method == "POST":
         asset_handler = core.Asset(request)

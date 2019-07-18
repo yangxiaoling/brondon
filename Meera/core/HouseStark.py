@@ -88,7 +88,7 @@ class ArgvHandler:
                     req_data = request.urlopen(req, timeout=settings.Params['request_timeout'])
                     callback = req_data.read()
                     print("-->server response:", callback)
-                    return json.loads(callback)
+                    return json.loads(callback.decode())
                 except request.URLError as e:
                     sys.exit('\033[31;1m%s\033[0m' % e)
             elif method == 'post':
@@ -97,7 +97,7 @@ class ArgvHandler:
                     req = request.Request(url=url, data=data_encode)
                     req_data = request.urlopen(req, timeout=settings.Params['request_timeout'])
                     callback = req_data.read()  # bytes类型
-                    callback = json.loads(callback)  # dict类型
+                    callback = json.loads(callback.decode())  # dict类型
                     print("\033[33;1m[%s]:[%s]\033[0m response:\n%s" % (method, url, callback))
                     return callback
                 except Exception as e:
